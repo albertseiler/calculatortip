@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(fonts/SpaceMono-Regular.ttf);
+}
+
+body {
+    background-color: #C5E4E7;
+    font-family: 'SpaceMono';
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    background-color: #C5E4E7;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #3D6666;
+    font-size: 11px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 1.5em;
+}
+
+.startingpoint h2 {
+    margin-top: 0px;
+    padding-top: 1em;
+    font-size: 14px;
+}
+
+.startingpoint {
+    background-color: white;
+    border-radius: 7%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.tippercentage {
+    font-size: 25px;
+    font-weight: bolder;
+    width: 5.2em;
+    font-family: 'SpaceMono';
+    background-color: #00474B;
+    color: white;
+    border-radius: 0.2em;
+    border: 0px;
+}
+
+.tippercentage.five {
+    margin-right: 1.5em;
+}
+
+.tippercentage.fifteen {
+    margin-right: 1.5em;
+}
+
+.tippercentage.fifty {
+    margin-right: 1.5em;
+}
+
+.tippercentage.firstrow {
+    margin-bottom: 0.5em;
+}
+
+.tippercentage.secondrow {
+    margin-bottom: 0.5em;
+}
+
+.tippercentage.custom {
+    background-color: #F3F9FA;
+    color: #5E7A7D;
+    font-size: 20px;
+    height: 39px;
+    width: 130px;
+}
+
+.samepadding {
+    padding-left: 1em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+
+}
+
+h2,
+h3 {
+    color: #5E7A7D;
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 12px;
+    color: white;
+}
+
+.billsum {
+    display: flex;
+    background-color: #F3F9FA;
+    height: 3em;
+    justify-content: space-between;
+    padding-right: 1em;
+    border-radius: 0.4em;
+}
+
+.numberofpeople {
+    display: flex;
+    background-color: #F3F9FA;
+    height: 3em;
+    justify-content: space-between;
+    padding-right: 1em;
+    border-radius: 0.4em;
+    margin-bottom: 2em;
+}
+
+.sum {
+    width: 83vw;
+    margin-top: 1em;
+    background-color: #00474B;
+    border-radius: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tipamount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 281px;
+    height: 58px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    align-items: center;
+}
+
+.totalamount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 281px;
+    height: 58px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    align-items: center;
+}
+
+.sum button {
+    background-color: #26C2AE;
+    color: #00474B;
+    width: 281px;
+    height: 48px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 0px;
+    border-radius: 0.5em;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.perperson {
+    font-size: 10px;
+    margin-top: -1.5em;
+    color: #7F9D9F;
+}
+
+.dollaramount {
+    color: #26C2AE;
+    font-size: 25px;
+}
+
+@media (min-width:800px) {
+
+    .startingpoint {
+        width: 60vw;
+        height: 55vh;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius: 2em;
+        display: flex;
+        margin-right: 20vw;
+        margin-left: 20vw;
+    }
+
+    .forpc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 5vh;
+        margin-left: 2em;
+    }
+
+    .billsection {
+        width: 30vw;
+    }
+
+    .numberofpeoplesection {
+        width: 30vw;
+    }
+
+    .tipsection {
+        width: 30vw;
+        height: 26vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .tipsection h3 {
+        margin-right: 30vw;
+    }
+
+    .tippercentage {
+        width: 9.33vw;
+        height: 6vh;
+    }
+
+    .tippercentage.custom {
+        width: 9.33vw;
+        height: 6vh;
+    }
+
+    .tippercentage.firstrowpc {
+        margin-right: 1vw;
+    }
+
+    .tippercentage.fifty {
+        margin-right: 0em;
+    }
+
+    .tippercentage.secondrowpc {
+        margin-right: 1vw;
+    }
+
+    .tippercentage.fifteen {
+        margin-right: 0em;
+    }
+
+
+
+    .sum {
+        width: 25vw;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5em;
+    }
+
+    .sum h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 5em;
+        margin-top: -0.025em;
+    }
+
+    .tipamount {
+        width: 30vw;
+    }
+
+    .totalamount {
+        width: 30vw;
+    }
+
+    .dollaramount {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .perperson {
+        margin-top: -2em;
+    }
+
+    .inputpeople {
+        border: none;
+        background-color: #F3F9FA;
+        font-family: 'SpaceMono';
+        text-align: end;
+        font-size: 25px;
+        color: #00474B;
+        font-weight: 600;
+    }
+
+    .inputbill {
+        border: none;
+        background-color: #F3F9FA;
+        font-family: 'SpaceMono';
+        text-align: end;
+        font-size: 25px;
+        color: #00474B;
+        font-weight: 600;
+    }
+}

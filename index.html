@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <header>
+    <h1>SPLI <br> TTER
+    </h1>
+  </header>
+  <section class="startingpoint">
+    <div class="forpc">
+      <aside class="billsection">
+        <h2>Bill</h2>
+        <div class="billsum">
+          <img src="./images/icon-dollar.svg" alt="icon of a dollar sign" class="samepadding">
+          <input type="text" inputmode="numeric" class="inputbill" value="0.00">
+        </div>
+      </aside>
+      <aside class="tipsection">
+        <h3>Select Tip %</h3>
+        <button class="tippercentage five firstrow firstrowpc">5%</button>
+        <button class="tippercentage ten firstrow secondrowpc">10%</button>
+        <button class="tippercentage fifteen secondrow">15%</button>
+        <button class="tippercentage twentyfive secondrow firstrowpc">25%</button>
+        <button class="tippercentage fifty secondrowpc">50%</button>
+        <button class="tippercentage custom">Custom</button>
+      </aside>
+      <aside class="numberofpeoplesection">
+        <h3>Number of People</h3>
+        <div class="numberofpeople">
+          <img src="./images/icon-person.svg" alt="icon of a person" class="samepadding">
+          <input type="text" inputmode="numeric" class="inputpeople" value="0.00">
+        </div>
+      </aside>
+    </div>
+    <aside class="sum">
+      <div class="tipamount">
+        <div>
+          <h4>Tip Amount</h4>
+          <p class="perperson">/ person</p>
+        </div>
+        <p class="dollaramount one">$0.00</p>
+      </div>
+      <div class="totalamount">
+        <div>
+          <h4>Total</h4>
+          <p class="perperson">/ person</p>
+        </div>
+        <p class="dollaramount two">$0.00</p>
+      </div>
+      <button>RESET</button>
+    </aside>
+
+  </section>
+  <footer class="attribution">
+    <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/albertseiler">Albert-Alexandru Seiler</a>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
