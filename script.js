@@ -1,31 +1,35 @@
 //Javascript
-const billInput = document.querySelector('.inputbill')
-const peopleInput = document.querySelector('.inputpeople')
-const tipPercentage = document.querySelector('.tippercentage')
+const billAmount = document.querySelector('.inputbill')
+const numberOfPeople = document.querySelector('.inputpeople')
+const percentageButtons = document.querySelectorAll('.tippercentage')
 const tipSum = document.querySelector('.dollaramount one')
 const totalSum = document.querySelector('.dollaramount two')
 
-let billNumber = parseInt(billInput.value)
 
-let buttonValue = 0;
 
-let peopleNumber = parseInt(peopleInput.value)
+//addEventListeners
 
-tipPercentage.forEach(button => {
-    buttonValue = parseFloat(button.value)
-    if (billNumber == 0 || isNaN(billNumber) || billNumber == Infinity || peopleNumber == 0 || peopleNumber == "") {
-        return
-    } else {
-        calcTips()
-    }
-});
+percentageButtons.forEach((button, index) => {
+    button.addEventListener('click', () => getValueOfButton);
 
-billInput.addEventListener("input", () => {
-    billNumber = parseFloat(billInput.value)
-
-    if (billNumber == 0 || isNaN(billNumber) || billNumber == Infinity || peopleNumber == 0 || peopleNumber == "") {
-        return
-    } else {
-        calcTips()
-    }
 })
+
+
+//Functions
+function getValueOfButton() {
+    const val = document.querySelectorAll('button').value;
+    console.log(val)
+}
+
+function tipCalc(billAmount, numberOfPeople, percentageButtons) {
+    return (billAmount.value * (percentageButtons / 100) / numberOfPeople)
+    console.log("tip calculation")
+
+}
+
+
+
+function totalCalc(billAmount, tipSum, numberOfPeople) {
+    return ((billAmount + tipSum) / numberOfPeople)
+    console.log("total calculation")
+}
