@@ -175,6 +175,30 @@ h4 {
     font-size: 25px;
 }
 
+.inputbill {
+    border: none;
+    background-color: #F3F9FA;
+    font-family: 'SpaceMono';
+    text-align: end;
+    font-size: 16px;
+    color: #00474B;
+    font-weight: 600;
+}
+
+.inputpeople {
+    border: none;
+    background-color: #F3F9FA;
+    font-family: 'SpaceMono';
+    text-align: end;
+    font-size: 16px;
+    color: #00474B;
+    font-weight: 600;
+}
+
+.active-tip {
+    background-color: #26C2AE;
+}
+
 @media (min-width:800px) {
 
     .startingpoint {
@@ -299,5 +323,9 @@ h4 {
         font-size: 25px;
         color: #00474B;
         font-weight: 600;
+    }
+
+    .active-tip {
+        background-color: #26C2AE;
     }
 }
