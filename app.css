@@ -329,3 +329,17 @@ h4 {
         background-color: #26C2AE;
     }
 }
+
+@media (min-width:420px) and (max-width:800px) {
+    .tippercentage.five {
+        margin-right: 21vw;
+    }
+
+    .tippercentage.fifteen {
+        margin-right: 21vw;
+    }
+
+    .tippercentage.fifty {
+        margin-right: 21vw;
+    }
+}
